@@ -2,6 +2,7 @@
 const User = require("./../models/User");
 const Article = require("./../models/Article");
 
+//some basic CRUD like get and set for handle User data
 module.exports = {
   addUser: (req, res, next) => {
     new User(req.body).save((err, newUser) => {
