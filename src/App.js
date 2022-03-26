@@ -16,7 +16,9 @@ function App() {
         <Route exact path="/" component={Feed} />
         <Route path="/profile/:id" component={Profile} />
         <Route path="/articleview/:id" component={ArticleView} />
-        <Route path="/editor" component={requireAuthentication(Editor)} />
+        //secure the editor route, user have to be registered and logged in
+        order to write an article
+        <Route path="/editor" component={requireAuthentication(Editor)} />{" "}
         <Route path="**" component={Feed} />
       </Switch>
     </div>
