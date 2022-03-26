@@ -1,3 +1,4 @@
+import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Header from "./components/Header.js";
 import Feed from "./components/Feed.js";
@@ -16,8 +17,6 @@ function App() {
         <Route exact path="/" component={Feed} />
         <Route path="/profile/:id" component={Profile} />
         <Route path="/articleview/:id" component={ArticleView} />
-        //secure the editor route, user have to be registered and logged in
-        order to write an article
         <Route path="/editor" component={requireAuthentication(Editor)} />{" "}
         <Route path="**" component={Feed} />
       </Switch>
