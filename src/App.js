@@ -1,11 +1,11 @@
 import { Switch, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Feed from "./components/Feed";
-import Profile from "./components/Profile";
-import ArticleView from "./components/ArticleView";
-import Editor from "./components/Editor";
+import Header from "./components/Header.js";
+import Feed from "./components/Feed.js";
+import Profile from "./components/Profile.js";
+import ArticleView from "./components/ArticleView.js";
+import Editor from "./components/Editor.js";
 import requireAuthentication from "./utils/requireAuth";
-import SignInWith from "./components/SignInWith";
+import SignInWith from "./components/SignInWith.js";
 function App() {
   const pathname = window.location.pathname;
   return (
